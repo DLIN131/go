@@ -1,19 +1,35 @@
 package models
 
+// type USR_COMPANY struct {
+// 	CPID int `json:"CPID" gorm:"column:ID;primaryKey"`
+// 	CP_ACCOUNT string `json:"CP_ACCOUNT", gorm:"column:CP_ACCOUNT"`
+// 	CP_PWD string `json:"CP_PWD", gorm:"column:CP_PWD"`
+// 	DTID int `json:"DTID", gorm:"column:DTID"`
+// 	STATUS int `json:"STATUS", gorm:"column:STATUS"`
+// 	MOD_DATETIME string `json:"MOD_DATETIME", gorm:"column:MOD_DATETIME"`
+// 	DATELINE_DATETIME string `json:"DATELINE_DATETIME", gorm:"column:DATELINE_DATETIME"`
+// 	CREATE_DATETIME string `json:"CREATE_DATETIME", gorm:"column:CREATE_DATETIME"`
+// 	ISPFI int `json:"ISPFI", gorm:"column:ISPFI"`
+// 	IDOLD string `json:"IDOLD", gorm:"column:IDOLD"`
+// 	BIND_AREA_CTYPE string `json:"BIND_AREA_CTYPE", gorm:"column:BIND_AREA_CTYPE"`
+// 	TMP_PWD string `json:"TMP_PWD", gorm:"column:TMP_PWD"`
+// 	TMP_TIME string `json:"TMP_TIME", gorm:"column:TMP_TIME"` 
+// }
+
 type USR_COMPANY struct {
-	CPID int `json:"CPID" gorm:"column:ID;primaryKey"`
-	CP_ACCOUNT string `json:"CP_ACCOUNT", gorm:"column:CP_ACCOUNT"`
-	CP_PWD string `json:"CP_PWD", gorm:"column:CP_PWD"`
-	DTID int `json:"DTID", gorm:"column:DTID"`
-	STATUS int `json:"STATUS", gorm:"column:STATUS"`
-	MOD_DATETIME string `json:"MOD_DATETIME", gorm:"column:MOD_DATETIME"`
-	DATELINE_DATETIME string `json:"DATELINE_DATETIME", gorm:"column:DATELINE_DATETIME"`
-	CREATE_DATETIME string `json:"CREATE_DATETIME", gorm:"column:CREATE_DATETIME"`
-	ISPFI int `json:"ISPFI", gorm:"column:ISPFI"`
-	IDOLD string `json:"IDOLD", gorm:"column:IDOLD"`
-	BIND_AREA_CTYPE string `json:"BIND_AREA_CTYPE", gorm:"column:BIND_AREA_CTYPE"`
-	TMP_PWD string `json:"TMP_PWD", gorm:"column:TMP_PWD"`
-	TMP_TIME string `json:"TMP_TIME", gorm:"column:TMP_TIME"` 
+	CPID int 
+	CP_ACCOUNT string 
+	CP_PWD string 
+	DTID int 
+	STATUS int 
+	MOD_DATETIME string 
+	DATELINE_DATETIME string 
+	CREATE_DATETIME string 
+	ISPFI int 
+	IDOLD string 
+	BIND_AREA_CTYPE string 
+	TMP_PWD string 
+	TMP_TIME string 
 }
 
 func (USR_COMPANY) TableName() string {
